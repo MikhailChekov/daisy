@@ -1,0 +1,223 @@
+
+/* Big screen */
+@media screen and (max-width: 1260px) and  (min-width: 769px){
+    .container {
+        /* ------------ First display --------------*/
+        header{
+            nav{
+                padding: 0px 20px;
+            }
+            .mainText{
+                h1{
+                    font-size: 40px;
+                    margin-top: -20px;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+        /* ------------ Second display --------------*/
+        .recive{
+           h1{
+               font-size: 26px;
+           }
+           p{
+               font-size: 18px;
+               margin-bottom: 20px
+           }
+           .icons{
+               flex-wrap: wrap;
+               justify-content: center;
+               div{
+                   width: auto;
+                   p{
+                       margin-bottom: 20px;
+                       margin-right: 20px;
+                   }
+               }
+           }
+       }
+       /* ------------ Third display --------------*/
+       section.expand{
+           padding: 30px 45px;
+           .expandText{
+               h1{
+                   font-size: 40px;
+                   line-height: 0;
+               }
+               a.arrowDown{
+                   margin-top: 80px;
+               }
+           }
+       }
+    }
+}
+
+/* Middle screen */
+@media screen and (max-width: 768px) and (min-width: 550px){
+
+    a.arrowDown{
+        font-size: 30px;
+        width: 45px;
+        height: 45px;
+
+    }
+    .container {
+        /* ------------ First display --------------*/
+        header{
+            nav{
+                a.logo{
+                    text-align: center;
+                }
+                padding: 0px 20px;
+                flex-direction: column;
+                justify-content: center;
+                menu{
+                    display: flex;
+                    justify-content: space-around;
+                    li{
+                        padding: 0;
+                    }
+                }
+
+            }
+            .mainText{
+                margin-bottom: 200px;
+
+                h1{
+                    font-size: 40px;
+                    margin-top: -20px;
+
+                }
+                p{
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        /* ------------ Second display --------------*/
+        section.recive{
+           padding: 30px 20px;
+           h1{
+               font-size: 26px;
+           }
+           p{
+               font-size: 18px;
+               margin-bottom: 20px;
+               width: auto;
+           }
+           .icons{
+               flex-wrap: wrap;
+               width: auto;
+               padding: 0 20px;
+
+               .icon{
+                   width: auto;
+                   p{
+                       margin-bottom: 20px;
+                   }
+               }
+           }
+       }
+       /* ------------ Third display --------------*/
+       section.expand{
+           padding: 30px 45px;
+           .expandText{
+               h1{
+                   font-size: 30px;
+                   line-height: 0;
+               }
+               a.arrowDown{
+                   margin-top: 50px;
+               }
+           }
+       }
+    }
+}
+
+/* Small screen */
+@media screen and (max-width: 549px){
+
+    a.arrowDown{
+        font-size: 30px;
+        width: 45px;
+        height: 45px;
+
+    }
+
+    .container {
+        /* ------------ First display --------------*/
+        header{
+            nav{
+                padding: 0px 20px;
+                margin-bottom: 100px;
+                a.logo{
+                    padding-top: 50px;
+                }
+
+                menu{
+                    display: flex;
+                    flex-direction: column;
+                    li{
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            .mainText{
+                margin-bottom: 50px;
+                h1{
+                    font-size: 40px;
+                    margin-top: -20px;
+                }
+                p{
+                    font-size: 18px;
+                    // padding-bottom: 20px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        /* ------------ Second display --------------*/
+        section.recive{
+           padding: 30px 20px;
+           >h1{
+               font-size: 26px;
+           }
+           >p{
+               width: 95%;
+               height: 55px;
+               font-size: 18px;
+               margin-bottom: 20px;
+               padding:0 20px;
+           }
+           .icons{
+               width: auto;
+               padding: 0 20px;
+               flex-wrap: wrap;
+               justify-content: center;
+               .icon{
+                   width: auto;
+                   p{
+                       margin-bottom: 40px;
+                   }
+               }
+           }
+       }
+       /* ------------ Third display --------------*/
+       section.expand{
+           padding: 0;
+           .expandText{
+               border: 0;
+               // padding: 0;
+               h1{
+                   font-size: 26px;
+                   line-height: 0;
+                   letter-spacing: 0;
+               }
+               a.arrowDown{
+                   margin-top: 50px;
+               }
+           }
+       }
+    }
+}

@@ -1,0 +1,144 @@
+/* Big screen */
+@media screen and (max-width: 1260px) and (min-width: 769px) {
+  .container {
+    /* ------------ First display --------------*/
+    /* ------------ Second display --------------*/
+    /* ------------ Third display --------------*/ }
+    .container header nav {
+      padding: 0px 20px; }
+    .container header .mainText h1 {
+      font-size: 40px;
+      margin-top: -20px; }
+    .container header .mainText p {
+      font-size: 18px; }
+    .container .recive h1 {
+      font-size: 26px; }
+    .container .recive p {
+      font-size: 18px;
+      margin-bottom: 20px; }
+    .container .recive .icons {
+      flex-wrap: wrap;
+      justify-content: center; }
+      .container .recive .icons div {
+        width: auto; }
+        .container .recive .icons div p {
+          margin-bottom: 20px;
+          margin-right: 20px; }
+    .container section.expand {
+      padding: 30px 45px; }
+      .container section.expand .expandText h1 {
+        font-size: 40px;
+        line-height: 0; }
+      .container section.expand .expandText a.arrowDown {
+        margin-top: 80px; } }
+
+/* Middle screen */
+@media screen and (max-width: 768px) and (min-width: 550px) {
+  a.arrowDown {
+    font-size: 30px;
+    width: 45px;
+    height: 45px; }
+  .container {
+    /* ------------ First display --------------*/
+    /* ------------ Second display --------------*/
+    /* ------------ Third display --------------*/ }
+    .container header nav {
+      padding: 0px 20px;
+      flex-direction: column;
+      justify-content: center; }
+      .container header nav a.logo {
+        text-align: center; }
+      .container header nav menu {
+        display: flex;
+        justify-content: space-around; }
+        .container header nav menu li {
+          padding: 0; }
+    .container header .mainText {
+      margin-bottom: 200px; }
+      .container header .mainText h1 {
+        font-size: 40px;
+        margin-top: -20px; }
+      .container header .mainText p {
+        font-size: 18px;
+        margin-bottom: 20px; }
+    .container section.recive {
+      padding: 30px 20px; }
+      .container section.recive h1 {
+        font-size: 26px; }
+      .container section.recive p {
+        font-size: 18px;
+        margin-bottom: 20px;
+        width: auto; }
+      .container section.recive .icons {
+        flex-wrap: wrap;
+        width: auto;
+        padding: 0 20px; }
+        .container section.recive .icons .icon {
+          width: auto; }
+          .container section.recive .icons .icon p {
+            margin-bottom: 20px; }
+    .container section.expand {
+      padding: 30px 45px; }
+      .container section.expand .expandText h1 {
+        font-size: 30px;
+        line-height: 0; }
+      .container section.expand .expandText a.arrowDown {
+        margin-top: 50px; } }
+
+/* Small screen */
+@media screen and (max-width: 549px) {
+  a.arrowDown {
+    font-size: 30px;
+    width: 45px;
+    height: 45px; }
+  .container {
+    /* ------------ First display --------------*/
+    /* ------------ Second display --------------*/
+    /* ------------ Third display --------------*/ }
+    .container header nav {
+      padding: 0px 20px;
+      margin-bottom: 100px; }
+      .container header nav a.logo {
+        padding-top: 50px; }
+      .container header nav menu {
+        display: flex;
+        flex-direction: column; }
+        .container header nav menu li {
+          margin-bottom: 10px; }
+    .container header .mainText {
+      margin-bottom: 50px; }
+      .container header .mainText h1 {
+        font-size: 40px;
+        margin-top: -20px; }
+      .container header .mainText p {
+        font-size: 18px;
+        margin-bottom: 20px; }
+    .container section.recive {
+      padding: 30px 20px; }
+      .container section.recive > h1 {
+        font-size: 26px; }
+      .container section.recive > p {
+        width: 95%;
+        height: 55px;
+        font-size: 18px;
+        margin-bottom: 20px;
+        padding: 0 20px; }
+      .container section.recive .icons {
+        width: auto;
+        padding: 0 20px;
+        flex-wrap: wrap;
+        justify-content: center; }
+        .container section.recive .icons .icon {
+          width: auto; }
+          .container section.recive .icons .icon p {
+            margin-bottom: 40px; }
+    .container section.expand {
+      padding: 0; }
+      .container section.expand .expandText {
+        border: 0; }
+        .container section.expand .expandText h1 {
+          font-size: 26px;
+          line-height: 0;
+          letter-spacing: 0; }
+        .container section.expand .expandText a.arrowDown {
+          margin-top: 50px; } }

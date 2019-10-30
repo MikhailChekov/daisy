@@ -1,0 +1,269 @@
+/* Css reset */
+/*** box sizing border-box for all elements ***/
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer; }
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer; }
+
+figure {
+  margin: 0; }
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0; }
+
+ul, ol, dd {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit; }
+
+p {
+  margin: 0; }
+
+cite {
+  font-style: normal; }
+
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin: 0; }
+
+/*Variables*/
+/* Main Headers*/
+.mainH1 {
+  color: #ffffff;
+  font-family: "Myriad Pro Regular";
+  font-size: 51px;
+  font-weight: 400;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: white; }
+  .mainH1 span.red {
+    color: #fc635e; }
+
+.secondh1 {
+  border-bottom: 1px solid #fc635e;
+  padding-bottom: 8px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-family: 'PF Encore Sans Pro - Regular';
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #868686;
+  letter-spacing: 0.54px;
+  text-align: center; }
+  .secondh1 span.red {
+    color: #fc635e; }
+
+/*Buttons*/
+.mainBtn {
+  color: #fc635e;
+  text-decoration: none;
+  font-family: "Myriad Pro Regular";
+  font-size: 24px;
+  border: 2px solid #fc635e;
+  border-radius: 8px;
+  width: 205px;
+  height: 56px; }
+  .mainBtn:hover {
+    background: #fc635e;
+    color: white; }
+
+a.arrowDown {
+  font-size: 22px;
+  text-decoration: none;
+  color: #fc635e;
+  border: 1px solid #fc635e;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto; }
+  a.arrowDown:hover {
+    background: #fc635e;
+    color: white; }
+
+.none {
+  display: none; }
+
+/*Site body*/
+.container {
+  margin: 0 auto;
+  max-width: 1260px;
+  /*------------ Display 1 ---------------*/
+  /*------------ Display 2 ---------------*/
+  /*------------ Display 3 ---------------*/
+  /*------------ Display 4 ---------------*/ }
+  .container header {
+    background: url("../img/background.png") no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 800px;
+    width: 100%;
+    padding-top: 25px; }
+    .container header nav {
+      padding: 0 160px 0 163px;
+      margin-bottom: 195px;
+      display: flex;
+      justify-content: space-between; }
+      .container header nav a.logo {
+        font-family: "Gotham Pro Bold";
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 15.65px;
+        letter-spacing: -0.2px;
+        color: white;
+        text-decoration: none; }
+        .container header nav a.logo img {
+          padding-right: 12px;
+          vertical-align: middle; }
+        .container header nav a.logo:hover {
+          opacity: 0.7; }
+      .container header nav menu {
+        list-style-type: none;
+        text-transform: uppercase;
+        display: flex; }
+        .container header nav menu li {
+          padding-left: 49px; }
+          .container header nav menu li a {
+            color: white;
+            font-family: "PF Encore Sans Pro - Thin";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 36px;
+            text-transform: uppercase;
+            letter-spacing: 0.64px;
+            text-decoration: none; }
+            .container header nav menu li a:hover {
+              color: #fc635e;
+              border-bottom: #fc635e solid 3px;
+              padding-bottom: 5px; }
+    .container header .mainText {
+      text-align: center;
+      margin-bottom: 239px; }
+      .container header .mainText h1 {
+        margin-bottom: 19px; }
+      .container header .mainText p {
+        color: #ffffff;
+        font-family: "Myriad Pro Regular";
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 26px;
+        margin-bottom: 43px;
+        letter-spacing: -0.12px; }
+  .container section.recive {
+    text-align: center;
+    background: white;
+    padding: 30px 0 10px 0;
+    color: #868686;
+    min-height: 542px; }
+    .container section.recive > h1 {
+      width: 338px; }
+    .container section.recive > p {
+      overflow-y: hidden;
+      margin: 0 auto;
+      height: 65px;
+      width: 505px;
+      padding-top: 15px;
+      color: #adadad;
+      font-family: "PF Encore Sans Pro - Thin";
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 26px;
+      margin-bottom: 80px; }
+    .container section.recive .icons {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 160px;
+      padding-right: 165px;
+      padding-bottom: 52px; }
+      .container section.recive .icons .icon {
+        width: 202px; }
+        .container section.recive .icons .icon img {
+          padding-bottom: 15px; }
+        .container section.recive .icons .icon h3 {
+          text-transform: uppercase;
+          color: #868686;
+          font-family: "PF Encore Sans Pro - Regular";
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: -0.1px; }
+        .container section.recive .icons .icon hr {
+          width: 58px;
+          height: 1px;
+          background-color: #adadad;
+          margin-bottom: 20px; }
+        .container section.recive .icons .icon p {
+          height: 50px;
+          text-align: justify;
+          overflow-y: hidden;
+          color: #adadad;
+          font-family: "PF Encore Sans Pro - Thin";
+          font-size: 15px;
+          font-weight: 300;
+          line-height: 18px;
+          letter-spacing: -0.07px; }
+  .container section.expand {
+    background: url("../img/expand.png") no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 160px; }
+    .container section.expand .expandText {
+      text-align: center;
+      width: 100%;
+      height: 385px;
+      border: 8px solid rgba(0, 0, 0, 0.2); }
+      .container section.expand .expandText h1 {
+        margin-top: 135px;
+        color: #ffffff;
+        font-family: "PF Encore Sans Pro - Regular";
+        font-size: 51px;
+        font-weight: 700;
+        line-height: 17.95px;
+        text-transform: uppercase;
+        letter-spacing: 2.4px;
+        margin-bottom: 60px; }
+        .container section.expand .expandText h1 span.red {
+          color: #fc635e; }
+      .container section.expand .expandText a.arrowDown {
+        margin-top: 160px; }
+  .container section.ourProcess {
+    margin-top: 60px; }
+    .container section.ourProcess .ourProcessTextBlock h1 {
+      width: 190px; }
+    .container section.ourProcess .ourProcessTextBlock > p {
+      overflow-y: hidden;
+      margin: 0 auto;
+      height: 65px;
+      width: 504px;
+      padding-top: 15px;
+      color: #adadad;
+      font-family: "PF Encore Sans Pro - Thin";
+      font-size: 20px;
+      font-weight: 300;
+      margin-bottom: 80px;
+      line-height: 26.02px;
+      /* Text style for "Daisy is s" */
+      letter-spacing: -0.1px; }
