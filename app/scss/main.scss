@@ -37,8 +37,11 @@ $mainColor: #fc635e;
 }
 
 .secondh1{
+    display: inline-block;
     border-bottom: 1px solid $mainColor;
     padding-bottom: 8px;
+    padding-left: 0.5px;
+    padding-right: 0.5px;
     margin: 0 auto;
     text-transform: uppercase;
     font-family: 'PF Encore Sans Pro - Regular';
@@ -52,6 +55,18 @@ $mainColor: #fc635e;
         color: $mainColor;
     }
 
+}
+
+.h2{
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-family: 'PF Encore Sans Pro - Regular';
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #868686;
+    letter-spacing: 0.54px;
+    text-align: center;
 }
 
 /*Buttons*/
@@ -68,6 +83,19 @@ $mainColor: #fc635e;
         background: $mainColor;
         color: white;
     }
+}
+
+.moreDetails{
+    width: 167px;
+    height: 44px;
+    background-color: $mainColor;
+    border-radius: 10px;
+    color: #f2f2f2;
+    font-family: "PF Encore Sans Pro - Thin";
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: -0.1px;
 }
 
 a.arrowDown{
@@ -91,6 +119,41 @@ a.arrowDown{
 .none{
     display: none;
 }
+
+/* Bloks dublicate Content && img */
+
+.borderLeft{
+    border-left: 10px solid $mainColor;
+}
+
+.borderRigth{
+    border-right: 10px solid $mainColor;
+}
+
+.Cont{
+    display: flex;
+    .Cont_text{
+        max-width: 45%;
+        h2{
+            padding: 10px 10px 3px 10px;
+            display: inline-block;
+        }
+        p{
+            margin: 0 auto;
+            padding: 15px 0;
+            color: #adadad;
+            font-family: "PF Encore Sans Pro - Thin";
+            font-size: 15px;
+            font-weight: 300;
+            margin: 0 auto;
+            line-height: 24px;
+            letter-spacing: 0.23px;
+        }
+    }
+    .Cont_img{
+    }
+}
+
 
 
 /*Site body*/
@@ -180,7 +243,7 @@ a.arrowDown{
         color: #868686;
         min-height: 542px;
         >h1{
-            width: 338px;
+            // width: 338px;
         }
         >p{
             overflow-y: hidden;
@@ -275,12 +338,13 @@ a.arrowDown{
     section.ourProcess{
         margin-top: 60px;
         .ourProcessTextBlock{
+            text-align: center;
             h1{
-                width: 190px;
+                // width: 190px;
             }
             >p{
+
                 overflow-y: hidden;
-                margin:0 auto;
                 height: 65px;
                 width: 504px;
                 padding-top: 15px;
@@ -288,15 +352,143 @@ a.arrowDown{
                 font-family: "PF Encore Sans Pro - Thin";
                 font-size: 20px;
                 font-weight: 300;
-                // line-height: 26px;
-                margin-bottom: 80px;
-                // letter-spacing: -0.01px;
-
-
+                margin: 0 auto 38px auto;
                 line-height: 26.02px;
-                /* Text style for "Daisy is s" */
                 letter-spacing: -0.1px;
+            }
+            .backProcess{
+                background-image: url('../img/Our_process.png');
+                height: 590px;
+                width: auto;
+                margin-right: 15px;
+                margin-bottom: 12px;
+                background-size: contain;
+                background-position: center center;
+                background-repeat:  no-repeat;
+            }
+            .steps{
+                display: none;
             }
         }
     }
+    /*------------ Display 5-6-7 ---------------*/
+    section.weDo{
+        margin-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        background: #f2f2f2;
+        h1{
+            margin-top: 60px;
+        }
+        .weDoCont{
+            text-align: left;
+            margin-bottom: 20px;
+            .weDoCont_text{
+                padding-top: 95px;
+                padding-left: 160px;
+                h2{
+
+                }
+                p{
+                    margin: 0 auto;
+                    padding: 15px 0;
+                    color: #adadad;
+                    font-family: "PF Encore Sans Pro - Thin";
+                    font-size: 15px;
+                    font-weight: 300;
+                    margin: 0 auto;
+                    line-height: 24px;
+                    letter-spacing: 0.23px;
+                }
+            }
+            .weDoCont_img{
+                padding-top: 20px;
+                padding-left: 8px;
+                img{
+                    height: 390px;
+                }
+            }
+        }
+    }
+
+    section.advertising{
+        margin-top: 20px;
+        text-align: center;
+        background: #ffffff;
+        h1{
+            margin-top: 60px;
+        }
+        .advertisingCont{
+            text-align: right;
+            margin-bottom: 20px;
+            .advertisingCont_text{
+                padding-top: 130px;
+                padding-right: 150px;
+                margin-bottom: 110px;
+                h2{
+                    padding: 10px 10px 3px 10px;
+                }
+                p{
+                    margin: 0 auto;
+                    padding: 18px 0;
+                    color: #adadad;
+                    font-family: "PF Encore Sans Pro - Thin";
+                    font-size: 15px;
+                    font-weight: 300;
+                    margin: 0 auto;
+                    line-height: 24px;
+                    letter-spacing: 0.23px;
+                }
+                .moreDetails{
+                    margin-top: 12px;
+                }
+            }
+            .advertisingCont_img{
+                padding-top: 67px;
+                padding-left: 120px;
+                img{
+                    height: 372px;
+                }
+            }
+        }
+    }
+
+    section.marketing{
+        margin-top: 15px;
+        padding-top: 120px;
+        padding-bottom: 20px;
+        text-align: center;
+        background: #f2f2f2;
+        .marketingCont{
+            text-align: left;
+            margin-bottom: 70px;
+            .marketingCont_text{
+                margin-top: 20px;
+                padding-left: 160px;
+                p{
+                    margin: 0 auto;
+                    padding: 15px 0;
+                    color: #adadad;
+                    font-family: "PF Encore Sans Pro - Thin";
+                    font-size: 15px;
+                    font-weight: 300;
+                    margin: 0 auto;
+                    line-height: 24px;
+                    letter-spacing: 0.23px;
+                }
+                button{
+                    margin-top: 20px;
+                }
+            }
+            .marketingCont_img{
+                padding-top: 5px;
+                padding-left: 20px;
+                img{
+                    height: 330px;
+                }
+            }
+        }
+    }
+    /*------------ Display 8 ---------------*/
+
 }

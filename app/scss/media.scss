@@ -51,6 +51,36 @@
                }
            }
        }
+       section.weDo1{
+           img{
+               height: 300px;
+           }
+       }
+       /* ------------ 5,6,7 display --------------*/
+       section.marketing, section.advertising, section.weDo{
+
+           .marketingCont, .advertisingCont, .weDoCont{
+               .Cont_text{
+                   max-width: 50%;
+               }
+
+               .marketingCont_text, .advertisingCont_text, .weDoCont_text{
+
+                   padding-top: 5%;
+                   padding-left: 10%;
+
+                p{ }
+               }
+               .marketingCont_img, .advertisingCont_img, .weDoCont_img{
+                   img{
+                        height: inherit;
+                        margin-top: 0;
+
+                   }
+               }
+
+           }
+       }
     }
 }
 
@@ -132,6 +162,41 @@
                    margin-top: 50px;
                }
            }
+       }
+       /* ------------ 5,6,7 display --------------*/
+
+       section.marketing, section.advertising, section.weDo{
+            padding: 0;
+           .marketingCont, .advertisingCont, .weDoCont{
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+               .Cont_text{
+                   max-width: 50%;
+               }
+
+               .marketingCont_text, .advertisingCont_text, .weDoCont_text{
+                   max-width: 100%;
+                   padding:5%;
+                    p{ }
+               }
+               .marketingCont_img, .advertisingCont_img, .weDoCont_img{
+                   text-align: center;
+                   padding: 5%;
+                   img{
+                        height: inherit;
+                        margin-top: 0;
+
+
+                   }
+               }
+
+           }
+       }
+       section.weDo, section.marketing{
+           padding-bottom: 15px;
        }
     }
 }
@@ -219,5 +284,65 @@
                }
            }
        }
+       /* ------------ Fourth display --------------*/
+       section.ourProcess{
+           .ourProcessTextBlock{
+
+               .steps{
+
+                   display:block;
+                   p{
+                       margin: 0 auto;
+                       width: 80%;
+                       padding: 15px 0;
+                       color: #adadad;
+                       font-family: "PF Encore Sans Pro - Thin";
+                       font-size: 15px;
+                       font-weight: 300;
+                       margin: 0 auto 38px auto;
+                       line-height: 26.02px;
+                       letter-spacing: -0.1px;
+                   }
+               }
+               .backProcess{
+                   display: none;
+
+               }
+           }
+       }
+        /* ------------ 5,6,7 display --------------*/
+        section.marketing, section.advertising, section.weDo{
+             padding: 0;
+            .marketingCont, .advertisingCont, .weDoCont{
+                 margin: 0;
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: space-around;
+
+                .Cont_text{
+                    max-width: 50%;
+                }
+
+                .marketingCont_text, .advertisingCont_text, .weDoCont_text{
+                    max-width: 100%;
+                    padding:5%;
+                     p{ }
+                }
+                .marketingCont_img, .advertisingCont_img, .weDoCont_img{
+                    text-align: center;
+                    padding: 5%;
+                    img{
+                         height: inherit;
+                         margin-top: 0;
+
+
+                    }
+                }
+
+            }
+        }
+        section.weDo, section.marketing{
+            padding-bottom: 15px;
+        }
     }
 }
