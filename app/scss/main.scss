@@ -490,5 +490,110 @@ a.arrowDown{
         }
     }
     /*------------ Display 8 ---------------*/
+    section.portfolio{
+        padding-bottom: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h1{
+            margin-top: 75px;
+            margin-bottom: 41px;
+        }
+        .controls{
+            display:flex;
+            justify-content: space-between;
+            width: 940px;
+            border-top: 1px #adadad solid;
+            border-bottom: 1px #adadad solid;
+            padding: 17px 15px;
+            margin-bottom: 45px;
+            button{
+                color: $mainColor;
+                background: transparent;
+                border: none;
+                color: #fc635e;
+                font-size: 20px;
+                font-weight: 300;
+                // line-height: 26px;
+                text-transform: uppercase;
+                font-family: "PF Encore Sans Pro - Thin";
+
+                &:hover{
+                    color: #e44640;
+                    cursor: pointer;
+                }
+            }
+            .sep{
+                font-size: 20px;
+                color: #adadad;
+            }
+        }
+        .container-filter{
+            width: 940px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            margin-bottom: 15px;
+            #ex1{
+                background-image: url(../img/portfolio/1.png);
+                grid-column: 1/3;
+            }
+            #ex2{ background-image: url(../img/portfolio/2.png); }
+            #ex3{ background-image: url(../img/portfolio/3.png); }
+            #ex4{ background-image: url(../img/portfolio/4.png); }
+            #ex5{ background-image: url(../img/portfolio/5.png); }
+            #ex6{
+                background-image: url(../img/portfolio/6.png);
+                grid-column: 3/5
+            }
+            .mix{
+                background-size: cover;
+                background-position: center center;
+                height: 200px;
+                .fil{
+                    width: inherit;
+                    height: inherit;
+                    color: #ffffff;
+                    font-family: "PF Encore Sans Pro - Regular";
+                    font-size: 28px;
+                    font-weight: 700;
+                    line-height: 26px;
+                    text-transform: uppercase;
+                    letter-spacing: 1.5px;
+                    font-weight: bold;
+                    display: none;
+                    margin: 0;
+                    background: url(../img/portfolio/plus.png) rgba(255, 72, 72, 0.75);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    p{
+                        margin: 0;
+                        padding: 25px;
+                    }
+
+                }
+                &:hover .fil{
+                    display: block;
+                    cursor: pointer;
+                }
+            }
+        }
+        button.btn-landing{
+            width: 192px;
+            height: 51px;
+            background-color: $mainColor;
+            border-radius: 10px;
+            color: #f2f2f2;
+            font-family: "PF Encore Sans Pro - Thin";
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 26px;
+            letter-spacing: -0.1px;
+            margin-top: 42px;
+            margin-bottom: 24px;
+        }
+
+    }
 
 }

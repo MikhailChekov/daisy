@@ -14,7 +14,7 @@ const cssDest = 'app/css/',
 cssPath = 'app/css/**/*.css',
 scssPath = 'app/scss/**/*.scss',
 htmlPath = 'app/*.html',
-jsPath = 'app/js/**/.js',
+jsPath = 'app/js/**/*.js',
 distPath = 'app/dist';
 
 let onError = function (err) {

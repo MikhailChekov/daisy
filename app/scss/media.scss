@@ -1,8 +1,10 @@
+$mainColor: #fc635e;
+
 
 /* Big screen */
 @media screen and (max-width: 1260px) and  (min-width: 769px){
     .container {
-        /* ------------ First display --------------*/
+        /* ------------ First display ( Big )--------------*/
         header{
             nav{
                 padding: 0px 20px;
@@ -17,7 +19,7 @@
                 }
             }
         }
-        /* ------------ Second display --------------*/
+        /* ------------ Second display ( Big )--------------*/
         .recive{
            h1{
                font-size: 26px;
@@ -38,7 +40,7 @@
                }
            }
        }
-       /* ------------ Third display --------------*/
+       /* ------------ Third display ( Big )--------------*/
        section.expand{
            padding: 30px 45px;
            .expandText{
@@ -56,7 +58,7 @@
                height: 300px;
            }
        }
-       /* ------------ 5,6,7 display --------------*/
+       /* ------------ 5,6,7 display ( Big )--------------*/
        section.marketing, section.advertising, section.weDo{
 
            .marketingCont, .advertisingCont, .weDoCont{
@@ -80,6 +82,40 @@
                }
 
            }
+           .advertisingCont{
+               padding-top: 30px;
+               padding-bottom: 30px;
+               .advertisingCont_img{
+                   padding: 0;
+               }
+               .advertisingCont_text{
+                   padding: 0;
+                   margin-bottom: 0;
+               }
+           }
+       }
+       section.marketing{
+           padding-top: 40px;
+       }
+       /* ------------ 8 display ( Middle )--------------*/
+       section.portfolio{
+            .controls{
+                width: 700px;
+            }
+            .container-filter{
+                width: 700px;
+                grid-template-columns: repeat(3, 1fr);
+                grid-column-gap: 10px;
+                grid-row-gap: 10px;
+
+                #ex1{
+                    grid-column: auto;
+                }
+                #ex6{
+                    grid-column: auto;
+                }
+            }
+
        }
     }
 }
@@ -94,7 +130,7 @@
 
     }
     .container {
-        /* ------------ First display --------------*/
+        /* ------------ First display ( Middle )--------------*/
         header{
             nav{
                 a.logo{
@@ -126,7 +162,7 @@
                 }
             }
         }
-        /* ------------ Second display --------------*/
+        /* ------------ Second display ( Middle )--------------*/
         section.recive{
            padding: 30px 20px;
            h1{
@@ -150,7 +186,7 @@
                }
            }
        }
-       /* ------------ Third display --------------*/
+       /* ------------ Third display ( Middle )--------------*/
        section.expand{
            padding: 30px 45px;
            .expandText{
@@ -163,7 +199,7 @@
                }
            }
        }
-       /* ------------ 5,6,7 display --------------*/
+       /* ------------ 5,6,7 display ( Middle )--------------*/
 
        section.marketing, section.advertising, section.weDo{
             padding: 0;
@@ -194,9 +230,46 @@
                }
 
            }
+           .advertisingCont{
+               .advertisingCont_text{
+                   margin-bottom: 40px;
+                   text-align: left;
+                   h2.borderRigth{
+                       border-left: 10px solid $mainColor;
+                       border-right: 0;
+                   }
+               }
+               .advertisingCont_img{
+                   order: 2;
+                   padding: 0;
+               }
+           }
        }
        section.weDo, section.marketing{
            padding-bottom: 15px;
+       }
+       section.advertising{
+
+       }
+
+       /* ------------ 8 display ( Middle )--------------*/
+       section.portfolio{
+            .controls{
+                width: 500px;
+            }
+            .container-filter{
+                width: 500px;
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: 10px;
+                grid-row-gap: 10px;
+                #ex1{
+                    grid-column: auto;
+                }
+                #ex6{
+                    grid-column: auto;
+                }
+            }
+
        }
     }
 }
@@ -212,7 +285,7 @@
     }
 
     .container {
-        /* ------------ First display --------------*/
+        /* ------------ First display ( Small )--------------*/
         header{
             nav{
                 padding: 0px 20px;
@@ -237,12 +310,11 @@
                 }
                 p{
                     font-size: 18px;
-                    // padding-bottom: 20px;
                     margin-bottom: 20px;
                 }
             }
         }
-        /* ------------ Second display --------------*/
+        /* ------------ Second display ( Small )--------------*/
         section.recive{
            padding: 30px 20px;
            >h1{
@@ -268,7 +340,7 @@
                }
            }
        }
-       /* ------------ Third display --------------*/
+       /* ------------ Third display ( Small )--------------*/
        section.expand{
            padding: 0;
            .expandText{
@@ -284,7 +356,7 @@
                }
            }
        }
-       /* ------------ Fourth display --------------*/
+       /* ------------ Fourth display ( Small )--------------*/
        section.ourProcess{
            .ourProcessTextBlock{
 
@@ -310,7 +382,7 @@
                }
            }
        }
-        /* ------------ 5,6,7 display --------------*/
+        /* ------------ 5,6,7 display ( Small )--------------*/
         section.marketing, section.advertising, section.weDo{
              padding: 0;
             .marketingCont, .advertisingCont, .weDoCont{
@@ -334,15 +406,53 @@
                     img{
                          height: inherit;
                          margin-top: 0;
-
-
                     }
                 }
 
             }
+            .advertisingCont{
+                .advertisingCont_text{
+                    margin-bottom: 40px;
+                    text-align: left;
+                    h2.borderRigth{
+                        border-left: 10px solid $mainColor;
+                        border-right: 0;
+                    }
+                }
+                .advertisingCont_img{
+                    order: 2;
+                }
+            }
         }
         section.weDo, section.marketing{
             padding-bottom: 15px;
+        }
+        /* ------------ 8 display ( Small )--------------*/
+        section.portfolio{
+             .controls{
+                 display: flex;
+                 flex-direction: column;
+                 width: 300px;
+                 button{
+                     font-size: 16px;
+                 }
+                 .sep{
+                     visibility: hidden;
+                 }
+             }
+             .container-filter{
+                 width: 300px;
+                 grid-template-columns: 1fr;
+                 grid-column-gap: 10px;
+                 grid-row-gap: 10px;
+                 #ex1{
+                     grid-column: auto;
+                 }
+                 #ex6{
+                     grid-column: auto;
+                 }
+             }
+
         }
     }
 }

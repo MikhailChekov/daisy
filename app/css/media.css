@@ -1,10 +1,11 @@
 /* Big screen */
 @media screen and (max-width: 1260px) and (min-width: 769px) {
   .container {
-    /* ------------ First display --------------*/
-    /* ------------ Second display --------------*/
-    /* ------------ Third display --------------*/
-    /* ------------ 5,6,7 display --------------*/ }
+    /* ------------ First display ( Big )--------------*/
+    /* ------------ Second display ( Big )--------------*/
+    /* ------------ Third display ( Big )--------------*/
+    /* ------------ 5,6,7 display ( Big )--------------*/
+    /* ------------ 8 display ( Middle )--------------*/ }
     .container header nav {
       padding: 0px 20px; }
     .container header .mainText h1 {
@@ -42,7 +43,28 @@
       padding-left: 10%; }
     .container section.marketing .marketingCont .marketingCont_img img, .container section.marketing .marketingCont .advertisingCont_img img, .container section.marketing .marketingCont .weDoCont_img img, .container section.marketing .advertisingCont .marketingCont_img img, .container section.marketing .advertisingCont .advertisingCont_img img, .container section.marketing .advertisingCont .weDoCont_img img, .container section.marketing .weDoCont .marketingCont_img img, .container section.marketing .weDoCont .advertisingCont_img img, .container section.marketing .weDoCont .weDoCont_img img, .container section.advertising .marketingCont .marketingCont_img img, .container section.advertising .marketingCont .advertisingCont_img img, .container section.advertising .marketingCont .weDoCont_img img, .container section.advertising .advertisingCont .marketingCont_img img, .container section.advertising .advertisingCont .advertisingCont_img img, .container section.advertising .advertisingCont .weDoCont_img img, .container section.advertising .weDoCont .marketingCont_img img, .container section.advertising .weDoCont .advertisingCont_img img, .container section.advertising .weDoCont .weDoCont_img img, .container section.weDo .marketingCont .marketingCont_img img, .container section.weDo .marketingCont .advertisingCont_img img, .container section.weDo .marketingCont .weDoCont_img img, .container section.weDo .advertisingCont .marketingCont_img img, .container section.weDo .advertisingCont .advertisingCont_img img, .container section.weDo .advertisingCont .weDoCont_img img, .container section.weDo .weDoCont .marketingCont_img img, .container section.weDo .weDoCont .advertisingCont_img img, .container section.weDo .weDoCont .weDoCont_img img {
       height: inherit;
-      margin-top: 0; } }
+      margin-top: 0; }
+    .container section.marketing .advertisingCont, .container section.advertising .advertisingCont, .container section.weDo .advertisingCont {
+      padding-top: 30px;
+      padding-bottom: 30px; }
+      .container section.marketing .advertisingCont .advertisingCont_img, .container section.advertising .advertisingCont .advertisingCont_img, .container section.weDo .advertisingCont .advertisingCont_img {
+        padding: 0; }
+      .container section.marketing .advertisingCont .advertisingCont_text, .container section.advertising .advertisingCont .advertisingCont_text, .container section.weDo .advertisingCont .advertisingCont_text {
+        padding: 0;
+        margin-bottom: 0; }
+    .container section.marketing {
+      padding-top: 40px; }
+    .container section.portfolio .controls {
+      width: 700px; }
+    .container section.portfolio .container-filter {
+      width: 700px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 10px;
+      grid-row-gap: 10px; }
+      .container section.portfolio .container-filter #ex1 {
+        grid-column: auto; }
+      .container section.portfolio .container-filter #ex6 {
+        grid-column: auto; } }
 
 /* Middle screen */
 @media screen and (max-width: 768px) and (min-width: 550px) {
@@ -51,10 +73,11 @@
     width: 45px;
     height: 45px; }
   .container {
-    /* ------------ First display --------------*/
-    /* ------------ Second display --------------*/
-    /* ------------ Third display --------------*/
-    /* ------------ 5,6,7 display --------------*/ }
+    /* ------------ First display ( Middle )--------------*/
+    /* ------------ Second display ( Middle )--------------*/
+    /* ------------ Third display ( Middle )--------------*/
+    /* ------------ 5,6,7 display ( Middle )--------------*/
+    /* ------------ 8 display ( Middle )--------------*/ }
     .container header nav {
       padding: 0px 20px;
       -webkit-box-orient: vertical;
@@ -122,8 +145,29 @@
           .container section.marketing .marketingCont .marketingCont_img img, .container section.marketing .marketingCont .advertisingCont_img img, .container section.marketing .marketingCont .weDoCont_img img, .container section.marketing .advertisingCont .marketingCont_img img, .container section.marketing .advertisingCont .advertisingCont_img img, .container section.marketing .advertisingCont .weDoCont_img img, .container section.marketing .weDoCont .marketingCont_img img, .container section.marketing .weDoCont .advertisingCont_img img, .container section.marketing .weDoCont .weDoCont_img img, .container section.advertising .marketingCont .marketingCont_img img, .container section.advertising .marketingCont .advertisingCont_img img, .container section.advertising .marketingCont .weDoCont_img img, .container section.advertising .advertisingCont .marketingCont_img img, .container section.advertising .advertisingCont .advertisingCont_img img, .container section.advertising .advertisingCont .weDoCont_img img, .container section.advertising .weDoCont .marketingCont_img img, .container section.advertising .weDoCont .advertisingCont_img img, .container section.advertising .weDoCont .weDoCont_img img, .container section.weDo .marketingCont .marketingCont_img img, .container section.weDo .marketingCont .advertisingCont_img img, .container section.weDo .marketingCont .weDoCont_img img, .container section.weDo .advertisingCont .marketingCont_img img, .container section.weDo .advertisingCont .advertisingCont_img img, .container section.weDo .advertisingCont .weDoCont_img img, .container section.weDo .weDoCont .marketingCont_img img, .container section.weDo .weDoCont .advertisingCont_img img, .container section.weDo .weDoCont .weDoCont_img img {
             height: inherit;
             margin-top: 0; }
+      .container section.marketing .advertisingCont .advertisingCont_text, .container section.advertising .advertisingCont .advertisingCont_text, .container section.weDo .advertisingCont .advertisingCont_text {
+        margin-bottom: 40px;
+        text-align: left; }
+        .container section.marketing .advertisingCont .advertisingCont_text h2.borderRigth, .container section.advertising .advertisingCont .advertisingCont_text h2.borderRigth, .container section.weDo .advertisingCont .advertisingCont_text h2.borderRigth {
+          border-left: 10px solid #fc635e;
+          border-right: 0; }
+      .container section.marketing .advertisingCont .advertisingCont_img, .container section.advertising .advertisingCont .advertisingCont_img, .container section.weDo .advertisingCont .advertisingCont_img {
+        -webkit-box-ordinal-group: 3;
+                order: 2;
+        padding: 0; }
     .container section.weDo, .container section.marketing {
-      padding-bottom: 15px; } }
+      padding-bottom: 15px; }
+    .container section.portfolio .controls {
+      width: 500px; }
+    .container section.portfolio .container-filter {
+      width: 500px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 10px;
+      grid-row-gap: 10px; }
+      .container section.portfolio .container-filter #ex1 {
+        grid-column: auto; }
+      .container section.portfolio .container-filter #ex6 {
+        grid-column: auto; } }
 
 /* Small screen */
 @media screen and (max-width: 549px) {
@@ -132,11 +176,12 @@
     width: 45px;
     height: 45px; }
   .container {
-    /* ------------ First display --------------*/
-    /* ------------ Second display --------------*/
-    /* ------------ Third display --------------*/
-    /* ------------ Fourth display --------------*/
-    /* ------------ 5,6,7 display --------------*/ }
+    /* ------------ First display ( Small )--------------*/
+    /* ------------ Second display ( Small )--------------*/
+    /* ------------ Third display ( Small )--------------*/
+    /* ------------ Fourth display ( Small )--------------*/
+    /* ------------ 5,6,7 display ( Small )--------------*/
+    /* ------------ 8 display ( Small )--------------*/ }
     .container header nav {
       padding: 0px 20px;
       margin-bottom: 100px; }
@@ -224,5 +269,34 @@
           .container section.marketing .marketingCont .marketingCont_img img, .container section.marketing .marketingCont .advertisingCont_img img, .container section.marketing .marketingCont .weDoCont_img img, .container section.marketing .advertisingCont .marketingCont_img img, .container section.marketing .advertisingCont .advertisingCont_img img, .container section.marketing .advertisingCont .weDoCont_img img, .container section.marketing .weDoCont .marketingCont_img img, .container section.marketing .weDoCont .advertisingCont_img img, .container section.marketing .weDoCont .weDoCont_img img, .container section.advertising .marketingCont .marketingCont_img img, .container section.advertising .marketingCont .advertisingCont_img img, .container section.advertising .marketingCont .weDoCont_img img, .container section.advertising .advertisingCont .marketingCont_img img, .container section.advertising .advertisingCont .advertisingCont_img img, .container section.advertising .advertisingCont .weDoCont_img img, .container section.advertising .weDoCont .marketingCont_img img, .container section.advertising .weDoCont .advertisingCont_img img, .container section.advertising .weDoCont .weDoCont_img img, .container section.weDo .marketingCont .marketingCont_img img, .container section.weDo .marketingCont .advertisingCont_img img, .container section.weDo .marketingCont .weDoCont_img img, .container section.weDo .advertisingCont .marketingCont_img img, .container section.weDo .advertisingCont .advertisingCont_img img, .container section.weDo .advertisingCont .weDoCont_img img, .container section.weDo .weDoCont .marketingCont_img img, .container section.weDo .weDoCont .advertisingCont_img img, .container section.weDo .weDoCont .weDoCont_img img {
             height: inherit;
             margin-top: 0; }
+      .container section.marketing .advertisingCont .advertisingCont_text, .container section.advertising .advertisingCont .advertisingCont_text, .container section.weDo .advertisingCont .advertisingCont_text {
+        margin-bottom: 40px;
+        text-align: left; }
+        .container section.marketing .advertisingCont .advertisingCont_text h2.borderRigth, .container section.advertising .advertisingCont .advertisingCont_text h2.borderRigth, .container section.weDo .advertisingCont .advertisingCont_text h2.borderRigth {
+          border-left: 10px solid #fc635e;
+          border-right: 0; }
+      .container section.marketing .advertisingCont .advertisingCont_img, .container section.advertising .advertisingCont .advertisingCont_img, .container section.weDo .advertisingCont .advertisingCont_img {
+        -webkit-box-ordinal-group: 3;
+                order: 2; }
     .container section.weDo, .container section.marketing {
-      padding-bottom: 15px; } }
+      padding-bottom: 15px; }
+    .container section.portfolio .controls {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      width: 300px; }
+      .container section.portfolio .controls button {
+        font-size: 16px; }
+      .container section.portfolio .controls .sep {
+        visibility: hidden; }
+    .container section.portfolio .container-filter {
+      width: 300px;
+      grid-template-columns: 1fr;
+      grid-column-gap: 10px;
+      grid-row-gap: 10px; }
+      .container section.portfolio .container-filter #ex1 {
+        grid-column: auto; }
+      .container section.portfolio .container-filter #ex6 {
+        grid-column: auto; } }
