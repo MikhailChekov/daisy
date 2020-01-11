@@ -491,7 +491,7 @@ a.arrowDown{
     }
     /*------------ Display 8 ---------------*/
     section.portfolio{
-        padding-bottom: 30px;
+        padding-bottom: 15px;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -594,6 +594,62 @@ a.arrowDown{
             margin-bottom: 24px;
         }
 
+    }
+    /*------------ Display 9 ---------------*/
+    section.ourTeam{
+        background: #f2f2f2;
+        text-align: center;
+        padding-bottom: 20px;
+        h1{
+            margin-top: 50px;
+            margin-bottom: 75px;
+        }
+
+        .ourTeamCont{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+            .ourTeamCont_card-mid{
+                margin: 0 60px;
+            }
+            .ourTeamCont_card{
+                width: 250px;
+                .ourTeamCont_name{
+                    span.red{
+                        color: $mainColor;
+                    }
+                    color: #565656;
+                    font-size: 28px;
+                    font-weight: 500;
+                    color: #565656;
+                    font-family: "PF Encore Sans Pro - Regular";
+                    font-weight: 500;
+                    line-height: 26.01px;
+                    margin-top:18px;
+                    margin-bottom: 8px;
+                }
+                .ourTeamCont_pos{
+                    font-family: "PF Encore Sans Pro - Thin";
+                    font-size: 20px;
+                    font-weight: 300;
+                    letter-spacing: -0.1px;
+                    line-height: 34.01px;
+                    margin-bottom: 5px;
+                }
+                .ourTeamCont_icons{
+                    font-size: 10px;
+                    .fa-stack{
+                        padding-left: 10px;
+                        cursor: pointer;
+                        letter-spacing: 1px;
+                    }
+                    .fa-circle{
+                        color: #565656;
+                    }
+                }
+            }
+
+        }
     }
 
 }

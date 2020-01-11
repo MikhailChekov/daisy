@@ -169,7 +169,8 @@ a.arrowDown {
   /*------------ Display 3 ---------------*/
   /*------------ Display 4 ---------------*/
   /*------------ Display 5-6-7 ---------------*/
-  /*------------ Display 8 ---------------*/ }
+  /*------------ Display 8 ---------------*/
+  /*------------ Display 9 ---------------*/ }
   .container header {
     background: url("../img/background.png") no-repeat;
     display: -webkit-box;
@@ -431,7 +432,7 @@ a.arrowDown {
         .container section.marketing .marketingCont .marketingCont_img img {
           height: 330px; }
   .container section.portfolio {
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     display: -webkit-box;
     display: flex;
     -webkit-box-align: center;
@@ -527,3 +528,47 @@ a.arrowDown {
       letter-spacing: -0.1px;
       margin-top: 42px;
       margin-bottom: 24px; }
+  .container section.ourTeam {
+    background: #f2f2f2;
+    text-align: center;
+    padding-bottom: 20px; }
+    .container section.ourTeam h1 {
+      margin-top: 50px;
+      margin-bottom: 75px; }
+    .container section.ourTeam .ourTeamCont {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: center;
+              justify-content: center;
+      margin-bottom: 15px; }
+      .container section.ourTeam .ourTeamCont .ourTeamCont_card-mid {
+        margin: 0 60px; }
+      .container section.ourTeam .ourTeamCont .ourTeamCont_card {
+        width: 250px; }
+        .container section.ourTeam .ourTeamCont .ourTeamCont_card .ourTeamCont_name {
+          color: #565656;
+          font-size: 28px;
+          font-weight: 500;
+          color: #565656;
+          font-family: "PF Encore Sans Pro - Regular";
+          font-weight: 500;
+          line-height: 26.01px;
+          margin-top: 18px;
+          margin-bottom: 8px; }
+          .container section.ourTeam .ourTeamCont .ourTeamCont_card .ourTeamCont_name span.red {
+            color: #fc635e; }
+        .container section.ourTeam .ourTeamCont .ourTeamCont_card .ourTeamCont_pos {
+          font-family: "PF Encore Sans Pro - Thin";
+          font-size: 20px;
+          font-weight: 300;
+          letter-spacing: -0.1px;
+          line-height: 34.01px;
+          margin-bottom: 5px; }
+        .container section.ourTeam .ourTeamCont .ourTeamCont_card .ourTeamCont_icons {
+          font-size: 10px; }
+          .container section.ourTeam .ourTeamCont .ourTeamCont_card .ourTeamCont_icons .fa-stack {
+            padding-left: 10px;
+            cursor: pointer;
+            letter-spacing: 1px; }
+          .container section.ourTeam .ourTeamCont .ourTeamCont_card .ourTeamCont_icons .fa-circle {
+            color: #565656; }

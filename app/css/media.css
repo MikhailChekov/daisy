@@ -1,11 +1,13 @@
+/* Variables */
 /* Big screen */
 @media screen and (max-width: 1260px) and (min-width: 769px) {
   .container {
-    /* ------------ First display ( Big )--------------*/
-    /* ------------ Second display ( Big )--------------*/
-    /* ------------ Third display ( Big )--------------*/
+    /* ------------ 1 display ( Big )--------------*/
+    /* ------------ 2 display ( Big )--------------*/
+    /* ------------ 3 display ( Big )--------------*/
     /* ------------ 5,6,7 display ( Big )--------------*/
-    /* ------------ 8 display ( Middle )--------------*/ }
+    /* ------------ 8 display ( Big )--------------*/
+    /* ------------ 9 display ( Big )--------------*/ }
     .container header nav {
       padding: 0px 20px; }
     .container header .mainText h1 {
@@ -13,18 +15,18 @@
       margin-top: -20px; }
     .container header .mainText p {
       font-size: 18px; }
-    .container .recive h1 {
+    .container section.recive h1 {
       font-size: 26px; }
-    .container .recive p {
+    .container section.recive p {
       font-size: 18px;
       margin-bottom: 20px; }
-    .container .recive .icons {
+    .container section.recive .icons {
       flex-wrap: wrap;
       -webkit-box-pack: center;
               justify-content: center; }
-      .container .recive .icons div {
+      .container section.recive .icons div {
         width: auto; }
-        .container .recive .icons div p {
+        .container section.recive .icons div p {
           margin-bottom: 20px;
           margin-right: 20px; }
     .container section.expand {
@@ -64,7 +66,9 @@
       .container section.portfolio .container-filter #ex1 {
         grid-column: auto; }
       .container section.portfolio .container-filter #ex6 {
-        grid-column: auto; } }
+        grid-column: auto; }
+    .container section.ourTeam .ourTeamCont .ourTeamCont_card-mid {
+      margin: 0 35px; } }
 
 /* Middle screen */
 @media screen and (max-width: 768px) and (min-width: 550px) {
@@ -73,11 +77,12 @@
     width: 45px;
     height: 45px; }
   .container {
-    /* ------------ First display ( Middle )--------------*/
-    /* ------------ Second display ( Middle )--------------*/
-    /* ------------ Third display ( Middle )--------------*/
+    /* ------------ 1 display ( Middle )--------------*/
+    /* ------------ 2 display ( Middle )--------------*/
+    /* ------------ 3 display ( Middle )--------------*/
     /* ------------ 5,6,7 display ( Middle )--------------*/
-    /* ------------ 8 display ( Middle )--------------*/ }
+    /* ------------ 8 display ( Middle )--------------*/
+    /* ------------ 9 display ( Middle )--------------*/ }
     .container header nav {
       padding: 0px 20px;
       -webkit-box-orient: vertical;
@@ -167,7 +172,13 @@
       .container section.portfolio .container-filter #ex1 {
         grid-column: auto; }
       .container section.portfolio .container-filter #ex6 {
-        grid-column: auto; } }
+        grid-column: auto; }
+    .container section.ourTeam .ourTeamCont .ourTeamCont_card-mid {
+      margin: 0 25px; }
+    .container section.ourTeam .ourTeamCont .ourTeamCont_card {
+      width: 200px; }
+      .container section.ourTeam .ourTeamCont .ourTeamCont_card .ourTeamCont_name {
+        height: 40px; } }
 
 /* Small screen */
 @media screen and (max-width: 549px) {
@@ -176,12 +187,13 @@
     width: 45px;
     height: 45px; }
   .container {
-    /* ------------ First display ( Small )--------------*/
-    /* ------------ Second display ( Small )--------------*/
-    /* ------------ Third display ( Small )--------------*/
-    /* ------------ Fourth display ( Small )--------------*/
+    /* ------------ 1 display ( Small )--------------*/
+    /* ------------ 2 display ( Small )--------------*/
+    /* ------------ 3 display ( Small )--------------*/
+    /* ------------ 4 display ( Small )--------------*/
     /* ------------ 5,6,7 display ( Small )--------------*/
-    /* ------------ 8 display ( Small )--------------*/ }
+    /* ------------ 8 display ( Small )--------------*/
+    /* ------------ 9 display ( Small )--------------*/ }
     .container header nav {
       padding: 0px 20px;
       margin-bottom: 100px; }
@@ -299,4 +311,18 @@
       .container section.portfolio .container-filter #ex1 {
         grid-column: auto; }
       .container section.portfolio .container-filter #ex6 {
-        grid-column: auto; } }
+        grid-column: auto; }
+    .container section.ourTeam .ourTeamCont {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      -webkit-box-align: center;
+              align-items: center; }
+      .container section.ourTeam .ourTeamCont .ourTeamCont_card-mid {
+        margin: 0; }
+      .container section.ourTeam .ourTeamCont .ourTeamCont_card {
+        margin-bottom: 20px; }
+        .container section.ourTeam .ourTeamCont .ourTeamCont_card .ourTeamCont_name {
+          height: 40px; } }

@@ -1,10 +1,11 @@
+/* Variables */
 $mainColor: #fc635e;
 
 
 /* Big screen */
 @media screen and (max-width: 1260px) and  (min-width: 769px){
     .container {
-        /* ------------ First display ( Big )--------------*/
+        /* ------------ 1 display ( Big )--------------*/
         header{
             nav{
                 padding: 0px 20px;
@@ -19,8 +20,8 @@ $mainColor: #fc635e;
                 }
             }
         }
-        /* ------------ Second display ( Big )--------------*/
-        .recive{
+        /* ------------ 2 display ( Big )--------------*/
+        section.recive{
            h1{
                font-size: 26px;
            }
@@ -40,7 +41,7 @@ $mainColor: #fc635e;
                }
            }
        }
-       /* ------------ Third display ( Big )--------------*/
+       /* ------------ 3 display ( Big )--------------*/
        section.expand{
            padding: 30px 45px;
            .expandText{
@@ -80,7 +81,6 @@ $mainColor: #fc635e;
 
                    }
                }
-
            }
            .advertisingCont{
                padding-top: 30px;
@@ -97,7 +97,7 @@ $mainColor: #fc635e;
        section.marketing{
            padding-top: 40px;
        }
-       /* ------------ 8 display ( Middle )--------------*/
+       /* ------------ 8 display ( Big )--------------*/
        section.portfolio{
             .controls{
                 width: 700px;
@@ -115,10 +115,21 @@ $mainColor: #fc635e;
                     grid-column: auto;
                 }
             }
+        }
+        /* ------------ 9 display ( Big )--------------*/
+        section.ourTeam{
 
-       }
+            .ourTeamCont{
+
+                .ourTeamCont_card-mid{
+                    margin: 0 35px;
+                }
+
+            }
+        }
     }
 }
+
 
 /* Middle screen */
 @media screen and (max-width: 768px) and (min-width: 550px){
@@ -130,7 +141,7 @@ $mainColor: #fc635e;
 
     }
     .container {
-        /* ------------ First display ( Middle )--------------*/
+        /* ------------ 1 display ( Middle )--------------*/
         header{
             nav{
                 a.logo{
@@ -162,7 +173,7 @@ $mainColor: #fc635e;
                 }
             }
         }
-        /* ------------ Second display ( Middle )--------------*/
+        /* ------------ 2 display ( Middle )--------------*/
         section.recive{
            padding: 30px 20px;
            h1{
@@ -186,9 +197,10 @@ $mainColor: #fc635e;
                }
            }
        }
-       /* ------------ Third display ( Middle )--------------*/
+       /* ------------ 3 display ( Middle )--------------*/
        section.expand{
            padding: 30px 45px;
+
            .expandText{
                h1{
                    font-size: 30px;
@@ -203,6 +215,7 @@ $mainColor: #fc635e;
 
        section.marketing, section.advertising, section.weDo{
             padding: 0;
+
            .marketingCont, .advertisingCont, .weDoCont{
                 margin: 0;
                 display: flex;
@@ -231,9 +244,11 @@ $mainColor: #fc635e;
 
            }
            .advertisingCont{
+
                .advertisingCont_text{
                    margin-bottom: 40px;
                    text-align: left;
+
                    h2.borderRigth{
                        border-left: 10px solid $mainColor;
                        border-right: 0;
@@ -271,6 +286,27 @@ $mainColor: #fc635e;
             }
 
        }
+       /* ------------ 9 display ( Middle )--------------*/
+       section.ourTeam{
+
+           .ourTeamCont{
+
+               .ourTeamCont_card-mid{
+                   margin: 0 25px;
+               }
+
+               .ourTeamCont_card{
+
+                   width: 200px;
+
+                   .ourTeamCont_name{
+                        height: 40px;
+                   }
+
+               }
+
+           }
+       }
     }
 }
 
@@ -281,11 +317,10 @@ $mainColor: #fc635e;
         font-size: 30px;
         width: 45px;
         height: 45px;
-
     }
 
     .container {
-        /* ------------ First display ( Small )--------------*/
+        /* ------------ 1 display ( Small )--------------*/
         header{
             nav{
                 padding: 0px 20px;
@@ -314,7 +349,7 @@ $mainColor: #fc635e;
                 }
             }
         }
-        /* ------------ Second display ( Small )--------------*/
+        /* ------------ 2 display ( Small )--------------*/
         section.recive{
            padding: 30px 20px;
            >h1{
@@ -340,7 +375,7 @@ $mainColor: #fc635e;
                }
            }
        }
-       /* ------------ Third display ( Small )--------------*/
+       /* ------------ 3 display ( Small )--------------*/
        section.expand{
            padding: 0;
            .expandText{
@@ -356,7 +391,7 @@ $mainColor: #fc635e;
                }
            }
        }
-       /* ------------ Fourth display ( Small )--------------*/
+       /* ------------ 4 display ( Small )--------------*/
        section.ourProcess{
            .ourProcessTextBlock{
 
@@ -453,6 +488,31 @@ $mainColor: #fc635e;
                  }
              }
 
+        }
+        /* ------------ 9 display ( Small )--------------*/
+        section.ourTeam{
+
+            h1{ }
+
+            .ourTeamCont{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .ourTeamCont_card-mid{
+                    margin: 0;
+                }
+
+                .ourTeamCont_card{
+                    margin-bottom: 20px;
+
+                    .ourTeamCont_name{
+                         height: 40px;
+                    }
+
+                }
+
+            }
         }
     }
 }
