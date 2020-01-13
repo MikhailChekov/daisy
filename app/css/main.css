@@ -131,10 +131,360 @@ a.arrowDown {
     background: #fc635e;
     color: white; }
 
-.none {
-  display: none; }
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  src: url("../fonts/MyriadPro/MyriadPro-Regular.eot");
+  src: url("../fonts/MyriadPro/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
 
-/* Bloks dublicate Content && img */
+@font-face {
+  font-family: 'PF Encore Sans Pro - Thin';
+  src: url("../fonts/EncoreSansPro/PFEncoreSansPro-Thin.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PF Encore Sans Pro - Regular';
+  src: url("../fonts/EncoreSansPro/PFEncoreSansPro-Regular.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham Pro Bold';
+  src: url("../fonts/GothamPro/GothamPro-Bold.eot");
+  src: url("../fonts/GothamPro/GothamPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamPro-Bold.woff") format("woff"), url("../fonts/GothamPro/GothamPro-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Big screen */
+@media screen and (max-width: 1260px) and (min-width: 769px) {
+  .container {
+    /* ------------ 1 display ( Big )--------------*/
+    /* ------------ 2 display ( Big )--------------*/
+    /* ------------ 3 display ( Big )--------------*/
+    /* ------------ 5,6,7 display ( Big )--------------*/
+    /* ------------ 8 display ( Big )--------------*/
+    /* ------------ 9 display ( Big )--------------*/ }
+    .container header nav {
+      padding: 0px 20px; }
+    .container header .mainText h1 {
+      font-size: 40px;
+      margin-top: -20px; }
+    .container header .mainText p {
+      font-size: 18px; }
+    .container section.recive h1 {
+      font-size: 26px; }
+    .container section.recive p {
+      font-size: 18px;
+      margin-bottom: 20px; }
+    .container section.recive .icons {
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+              justify-content: center; }
+      .container section.recive .icons div {
+        width: auto; }
+        .container section.recive .icons div p {
+          margin-bottom: 20px;
+          margin-right: 20px; }
+    .container section.expand {
+      padding: 30px 45px; }
+      .container section.expand .expandText h1 {
+        font-size: 40px;
+        line-height: 0; }
+      .container section.expand .expandText a.arrowDown {
+        margin-top: 80px; }
+    .container section.weDo1 img {
+      height: 300px; }
+    .container section.marketing .marketingCont .Cont_text, .container section.marketing .advertisingCont .Cont_text, .container section.marketing .weDoCont .Cont_text, .container section.advertising .marketingCont .Cont_text, .container section.advertising .advertisingCont .Cont_text, .container section.advertising .weDoCont .Cont_text, .container section.weDo .marketingCont .Cont_text, .container section.weDo .advertisingCont .Cont_text, .container section.weDo .weDoCont .Cont_text {
+      max-width: 50%; }
+    .container section.marketing .marketingCont .marketingCont_text, .container section.marketing .marketingCont .advertisingCont_text, .container section.marketing .marketingCont .weDoCont_text, .container section.marketing .advertisingCont .marketingCont_text, .container section.marketing .advertisingCont .advertisingCont_text, .container section.marketing .advertisingCont .weDoCont_text, .container section.marketing .weDoCont .marketingCont_text, .container section.marketing .weDoCont .advertisingCont_text, .container section.marketing .weDoCont .weDoCont_text, .container section.advertising .marketingCont .marketingCont_text, .container section.advertising .marketingCont .advertisingCont_text, .container section.advertising .marketingCont .weDoCont_text, .container section.advertising .advertisingCont .marketingCont_text, .container section.advertising .advertisingCont .advertisingCont_text, .container section.advertising .advertisingCont .weDoCont_text, .container section.advertising .weDoCont .marketingCont_text, .container section.advertising .weDoCont .advertisingCont_text, .container section.advertising .weDoCont .weDoCont_text, .container section.weDo .marketingCont .marketingCont_text, .container section.weDo .marketingCont .advertisingCont_text, .container section.weDo .marketingCont .weDoCont_text, .container section.weDo .advertisingCont .marketingCont_text, .container section.weDo .advertisingCont .advertisingCont_text, .container section.weDo .advertisingCont .weDoCont_text, .container section.weDo .weDoCont .marketingCont_text, .container section.weDo .weDoCont .advertisingCont_text, .container section.weDo .weDoCont .weDoCont_text {
+      padding-top: 5%;
+      padding-left: 10%; }
+    .container section.marketing .marketingCont .marketingCont_img img, .container section.marketing .marketingCont .advertisingCont_img img, .container section.marketing .marketingCont .weDoCont_img img, .container section.marketing .advertisingCont .marketingCont_img img, .container section.marketing .advertisingCont .advertisingCont_img img, .container section.marketing .advertisingCont .weDoCont_img img, .container section.marketing .weDoCont .marketingCont_img img, .container section.marketing .weDoCont .advertisingCont_img img, .container section.marketing .weDoCont .weDoCont_img img, .container section.advertising .marketingCont .marketingCont_img img, .container section.advertising .marketingCont .advertisingCont_img img, .container section.advertising .marketingCont .weDoCont_img img, .container section.advertising .advertisingCont .marketingCont_img img, .container section.advertising .advertisingCont .advertisingCont_img img, .container section.advertising .advertisingCont .weDoCont_img img, .container section.advertising .weDoCont .marketingCont_img img, .container section.advertising .weDoCont .advertisingCont_img img, .container section.advertising .weDoCont .weDoCont_img img, .container section.weDo .marketingCont .marketingCont_img img, .container section.weDo .marketingCont .advertisingCont_img img, .container section.weDo .marketingCont .weDoCont_img img, .container section.weDo .advertisingCont .marketingCont_img img, .container section.weDo .advertisingCont .advertisingCont_img img, .container section.weDo .advertisingCont .weDoCont_img img, .container section.weDo .weDoCont .marketingCont_img img, .container section.weDo .weDoCont .advertisingCont_img img, .container section.weDo .weDoCont .weDoCont_img img {
+      height: inherit;
+      margin-top: 0; }
+    .container section.marketing .advertisingCont, .container section.advertising .advertisingCont, .container section.weDo .advertisingCont {
+      padding-top: 30px;
+      padding-bottom: 30px; }
+      .container section.marketing .advertisingCont .advertisingCont_img, .container section.advertising .advertisingCont .advertisingCont_img, .container section.weDo .advertisingCont .advertisingCont_img {
+        padding: 0; }
+      .container section.marketing .advertisingCont .advertisingCont_text, .container section.advertising .advertisingCont .advertisingCont_text, .container section.weDo .advertisingCont .advertisingCont_text {
+        padding: 0;
+        margin-bottom: 0; }
+    .container section.marketing {
+      padding-top: 40px; }
+    .container section.portfolio .controls {
+      width: 700px; }
+    .container section.portfolio .container-filter {
+      width: 700px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 10px;
+      grid-row-gap: 10px; }
+      .container section.portfolio .container-filter #ex1 {
+        grid-column: auto; }
+      .container section.portfolio .container-filter #ex6 {
+        grid-column: auto; }
+    .container section.ourTeam .ourTeamCont .ourTeamCont_card-mid {
+      margin: 0 35px; } }
+
+/* Middle screen */
+@media screen and (max-width: 768px) and (min-width: 550px) {
+  a.arrowDown {
+    font-size: 30px;
+    width: 45px;
+    height: 45px; }
+  .container {
+    /* ------------ 1 display ( Middle )--------------*/
+    /* ------------ 2 display ( Middle )--------------*/
+    /* ------------ 3 display ( Middle )--------------*/
+    /* ------------ 5,6,7 display ( Middle )--------------*/
+    /* ------------ 8 display ( Middle )--------------*/
+    /* ------------ 9 display ( Middle )--------------*/ }
+    .container header nav {
+      padding: 0px 20px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      -webkit-box-pack: center;
+              justify-content: center; }
+      .container header nav a.logo {
+        text-align: center; }
+      .container header nav menu {
+        display: -webkit-box;
+        display: flex;
+        justify-content: space-around; }
+        .container header nav menu li {
+          padding: 0; }
+    .container header .mainText {
+      margin-bottom: 200px; }
+      .container header .mainText h1 {
+        font-size: 40px;
+        margin-top: -20px; }
+      .container header .mainText p {
+        font-size: 18px;
+        margin-bottom: 20px; }
+    .container section.recive {
+      padding: 30px 20px; }
+      .container section.recive h1 {
+        font-size: 26px; }
+      .container section.recive p {
+        font-size: 18px;
+        margin-bottom: 20px;
+        width: auto; }
+      .container section.recive .icons {
+        flex-wrap: wrap;
+        width: auto;
+        padding: 0 20px; }
+        .container section.recive .icons .icon {
+          width: auto; }
+          .container section.recive .icons .icon p {
+            margin-bottom: 20px; }
+    .container section.expand {
+      padding: 30px 45px; }
+      .container section.expand .expandText h1 {
+        font-size: 30px;
+        line-height: 0; }
+      .container section.expand .expandText a.arrowDown {
+        margin-top: 50px; }
+    .container section.marketing, .container section.advertising, .container section.weDo {
+      padding: 0; }
+      .container section.marketing .marketingCont, .container section.marketing .advertisingCont, .container section.marketing .weDoCont, .container section.advertising .marketingCont, .container section.advertising .advertisingCont, .container section.advertising .weDoCont, .container section.weDo .marketingCont, .container section.weDo .advertisingCont, .container section.weDo .weDoCont {
+        margin: 0;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        justify-content: space-around; }
+        .container section.marketing .marketingCont .Cont_text, .container section.marketing .advertisingCont .Cont_text, .container section.marketing .weDoCont .Cont_text, .container section.advertising .marketingCont .Cont_text, .container section.advertising .advertisingCont .Cont_text, .container section.advertising .weDoCont .Cont_text, .container section.weDo .marketingCont .Cont_text, .container section.weDo .advertisingCont .Cont_text, .container section.weDo .weDoCont .Cont_text {
+          max-width: 50%; }
+        .container section.marketing .marketingCont .marketingCont_text, .container section.marketing .marketingCont .advertisingCont_text, .container section.marketing .marketingCont .weDoCont_text, .container section.marketing .advertisingCont .marketingCont_text, .container section.marketing .advertisingCont .advertisingCont_text, .container section.marketing .advertisingCont .weDoCont_text, .container section.marketing .weDoCont .marketingCont_text, .container section.marketing .weDoCont .advertisingCont_text, .container section.marketing .weDoCont .weDoCont_text, .container section.advertising .marketingCont .marketingCont_text, .container section.advertising .marketingCont .advertisingCont_text, .container section.advertising .marketingCont .weDoCont_text, .container section.advertising .advertisingCont .marketingCont_text, .container section.advertising .advertisingCont .advertisingCont_text, .container section.advertising .advertisingCont .weDoCont_text, .container section.advertising .weDoCont .marketingCont_text, .container section.advertising .weDoCont .advertisingCont_text, .container section.advertising .weDoCont .weDoCont_text, .container section.weDo .marketingCont .marketingCont_text, .container section.weDo .marketingCont .advertisingCont_text, .container section.weDo .marketingCont .weDoCont_text, .container section.weDo .advertisingCont .marketingCont_text, .container section.weDo .advertisingCont .advertisingCont_text, .container section.weDo .advertisingCont .weDoCont_text, .container section.weDo .weDoCont .marketingCont_text, .container section.weDo .weDoCont .advertisingCont_text, .container section.weDo .weDoCont .weDoCont_text {
+          max-width: 100%;
+          padding: 5%; }
+        .container section.marketing .marketingCont .marketingCont_img, .container section.marketing .marketingCont .advertisingCont_img, .container section.marketing .marketingCont .weDoCont_img, .container section.marketing .advertisingCont .marketingCont_img, .container section.marketing .advertisingCont .advertisingCont_img, .container section.marketing .advertisingCont .weDoCont_img, .container section.marketing .weDoCont .marketingCont_img, .container section.marketing .weDoCont .advertisingCont_img, .container section.marketing .weDoCont .weDoCont_img, .container section.advertising .marketingCont .marketingCont_img, .container section.advertising .marketingCont .advertisingCont_img, .container section.advertising .marketingCont .weDoCont_img, .container section.advertising .advertisingCont .marketingCont_img, .container section.advertising .advertisingCont .advertisingCont_img, .container section.advertising .advertisingCont .weDoCont_img, .container section.advertising .weDoCont .marketingCont_img, .container section.advertising .weDoCont .advertisingCont_img, .container section.advertising .weDoCont .weDoCont_img, .container section.weDo .marketingCont .marketingCont_img, .container section.weDo .marketingCont .advertisingCont_img, .container section.weDo .marketingCont .weDoCont_img, .container section.weDo .advertisingCont .marketingCont_img, .container section.weDo .advertisingCont .advertisingCont_img, .container section.weDo .advertisingCont .weDoCont_img, .container section.weDo .weDoCont .marketingCont_img, .container section.weDo .weDoCont .advertisingCont_img, .container section.weDo .weDoCont .weDoCont_img {
+          text-align: center;
+          padding: 5%; }
+          .container section.marketing .marketingCont .marketingCont_img img, .container section.marketing .marketingCont .advertisingCont_img img, .container section.marketing .marketingCont .weDoCont_img img, .container section.marketing .advertisingCont .marketingCont_img img, .container section.marketing .advertisingCont .advertisingCont_img img, .container section.marketing .advertisingCont .weDoCont_img img, .container section.marketing .weDoCont .marketingCont_img img, .container section.marketing .weDoCont .advertisingCont_img img, .container section.marketing .weDoCont .weDoCont_img img, .container section.advertising .marketingCont .marketingCont_img img, .container section.advertising .marketingCont .advertisingCont_img img, .container section.advertising .marketingCont .weDoCont_img img, .container section.advertising .advertisingCont .marketingCont_img img, .container section.advertising .advertisingCont .advertisingCont_img img, .container section.advertising .advertisingCont .weDoCont_img img, .container section.advertising .weDoCont .marketingCont_img img, .container section.advertising .weDoCont .advertisingCont_img img, .container section.advertising .weDoCont .weDoCont_img img, .container section.weDo .marketingCont .marketingCont_img img, .container section.weDo .marketingCont .advertisingCont_img img, .container section.weDo .marketingCont .weDoCont_img img, .container section.weDo .advertisingCont .marketingCont_img img, .container section.weDo .advertisingCont .advertisingCont_img img, .container section.weDo .advertisingCont .weDoCont_img img, .container section.weDo .weDoCont .marketingCont_img img, .container section.weDo .weDoCont .advertisingCont_img img, .container section.weDo .weDoCont .weDoCont_img img {
+            height: inherit;
+            margin-top: 0; }
+      .container section.marketing .advertisingCont .advertisingCont_text, .container section.advertising .advertisingCont .advertisingCont_text, .container section.weDo .advertisingCont .advertisingCont_text {
+        margin-bottom: 40px;
+        text-align: left; }
+        .container section.marketing .advertisingCont .advertisingCont_text h2.borderRigth, .container section.advertising .advertisingCont .advertisingCont_text h2.borderRigth, .container section.weDo .advertisingCont .advertisingCont_text h2.borderRigth {
+          border-left: 10px solid #fc635e;
+          border-right: 0; }
+      .container section.marketing .advertisingCont .advertisingCont_img, .container section.advertising .advertisingCont .advertisingCont_img, .container section.weDo .advertisingCont .advertisingCont_img {
+        -webkit-box-ordinal-group: 3;
+                order: 2;
+        padding: 0; }
+    .container section.weDo, .container section.marketing {
+      padding-bottom: 15px; }
+    .container section.portfolio .controls {
+      width: 500px; }
+    .container section.portfolio .container-filter {
+      width: 500px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 10px;
+      grid-row-gap: 10px; }
+      .container section.portfolio .container-filter #ex1 {
+        grid-column: auto; }
+      .container section.portfolio .container-filter #ex6 {
+        grid-column: auto; }
+    .container section.ourTeam .ourTeamCont .ourTeamCont_card-mid {
+      margin: 0 25px; }
+    .container section.ourTeam .ourTeamCont .ourTeamCont_card {
+      width: 200px; }
+      .container section.ourTeam .ourTeamCont .ourTeamCont_card .ourTeamCont_name {
+        height: 40px; } }
+
+/* Small screen */
+@media screen and (max-width: 549px) {
+  a.arrowDown {
+    font-size: 30px;
+    width: 45px;
+    height: 45px; }
+  .container {
+    /* ------------ 1 display ( Small )--------------*/
+    /* ------------ 2 display ( Small )--------------*/
+    /* ------------ 3 display ( Small )--------------*/
+    /* ------------ 4 display ( Small )--------------*/
+    /* ------------ 5,6,7 display ( Small )--------------*/
+    /* ------------ 8 display ( Small )--------------*/
+    /* ------------ 9 display ( Small )--------------*/ }
+    .container header nav {
+      padding: 0px 20px;
+      margin-bottom: 100px; }
+      .container header nav a.logo {
+        padding-top: 50px; }
+      .container header nav menu {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column; }
+        .container header nav menu li {
+          margin-bottom: 10px; }
+    .container header .mainText {
+      margin-bottom: 50px; }
+      .container header .mainText h1 {
+        font-size: 40px;
+        margin-top: -20px; }
+      .container header .mainText p {
+        font-size: 18px;
+        margin-bottom: 20px; }
+    .container section.recive {
+      padding: 30px 20px; }
+      .container section.recive > h1 {
+        font-size: 26px; }
+      .container section.recive > p {
+        width: 95%;
+        height: 55px;
+        font-size: 18px;
+        margin-bottom: 20px;
+        padding: 0 20px; }
+      .container section.recive .icons {
+        width: auto;
+        padding: 0 20px;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+                justify-content: center; }
+        .container section.recive .icons .icon {
+          width: auto; }
+          .container section.recive .icons .icon p {
+            margin-bottom: 40px; }
+    .container section.expand {
+      padding: 0; }
+      .container section.expand .expandText {
+        border: 0; }
+        .container section.expand .expandText h1 {
+          font-size: 26px;
+          line-height: 0;
+          letter-spacing: 0; }
+        .container section.expand .expandText a.arrowDown {
+          margin-top: 50px; }
+    .container section.ourProcess .ourProcessTextBlock .steps {
+      display: block; }
+      .container section.ourProcess .ourProcessTextBlock .steps p {
+        margin: 0 auto;
+        width: 80%;
+        padding: 15px 0;
+        color: #adadad;
+        font-family: "PF Encore Sans Pro - Thin";
+        font-size: 15px;
+        font-weight: 300;
+        margin: 0 auto 38px auto;
+        line-height: 26.02px;
+        letter-spacing: -0.1px; }
+    .container section.ourProcess .ourProcessTextBlock .backProcess {
+      display: none; }
+    .container section.marketing, .container section.advertising, .container section.weDo {
+      padding: 0; }
+      .container section.marketing .marketingCont, .container section.marketing .advertisingCont, .container section.marketing .weDoCont, .container section.advertising .marketingCont, .container section.advertising .advertisingCont, .container section.advertising .weDoCont, .container section.weDo .marketingCont, .container section.weDo .advertisingCont, .container section.weDo .weDoCont {
+        margin: 0;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        justify-content: space-around; }
+        .container section.marketing .marketingCont .Cont_text, .container section.marketing .advertisingCont .Cont_text, .container section.marketing .weDoCont .Cont_text, .container section.advertising .marketingCont .Cont_text, .container section.advertising .advertisingCont .Cont_text, .container section.advertising .weDoCont .Cont_text, .container section.weDo .marketingCont .Cont_text, .container section.weDo .advertisingCont .Cont_text, .container section.weDo .weDoCont .Cont_text {
+          max-width: 50%; }
+        .container section.marketing .marketingCont .marketingCont_text, .container section.marketing .marketingCont .advertisingCont_text, .container section.marketing .marketingCont .weDoCont_text, .container section.marketing .advertisingCont .marketingCont_text, .container section.marketing .advertisingCont .advertisingCont_text, .container section.marketing .advertisingCont .weDoCont_text, .container section.marketing .weDoCont .marketingCont_text, .container section.marketing .weDoCont .advertisingCont_text, .container section.marketing .weDoCont .weDoCont_text, .container section.advertising .marketingCont .marketingCont_text, .container section.advertising .marketingCont .advertisingCont_text, .container section.advertising .marketingCont .weDoCont_text, .container section.advertising .advertisingCont .marketingCont_text, .container section.advertising .advertisingCont .advertisingCont_text, .container section.advertising .advertisingCont .weDoCont_text, .container section.advertising .weDoCont .marketingCont_text, .container section.advertising .weDoCont .advertisingCont_text, .container section.advertising .weDoCont .weDoCont_text, .container section.weDo .marketingCont .marketingCont_text, .container section.weDo .marketingCont .advertisingCont_text, .container section.weDo .marketingCont .weDoCont_text, .container section.weDo .advertisingCont .marketingCont_text, .container section.weDo .advertisingCont .advertisingCont_text, .container section.weDo .advertisingCont .weDoCont_text, .container section.weDo .weDoCont .marketingCont_text, .container section.weDo .weDoCont .advertisingCont_text, .container section.weDo .weDoCont .weDoCont_text {
+          max-width: 100%;
+          padding: 5%; }
+        .container section.marketing .marketingCont .marketingCont_img, .container section.marketing .marketingCont .advertisingCont_img, .container section.marketing .marketingCont .weDoCont_img, .container section.marketing .advertisingCont .marketingCont_img, .container section.marketing .advertisingCont .advertisingCont_img, .container section.marketing .advertisingCont .weDoCont_img, .container section.marketing .weDoCont .marketingCont_img, .container section.marketing .weDoCont .advertisingCont_img, .container section.marketing .weDoCont .weDoCont_img, .container section.advertising .marketingCont .marketingCont_img, .container section.advertising .marketingCont .advertisingCont_img, .container section.advertising .marketingCont .weDoCont_img, .container section.advertising .advertisingCont .marketingCont_img, .container section.advertising .advertisingCont .advertisingCont_img, .container section.advertising .advertisingCont .weDoCont_img, .container section.advertising .weDoCont .marketingCont_img, .container section.advertising .weDoCont .advertisingCont_img, .container section.advertising .weDoCont .weDoCont_img, .container section.weDo .marketingCont .marketingCont_img, .container section.weDo .marketingCont .advertisingCont_img, .container section.weDo .marketingCont .weDoCont_img, .container section.weDo .advertisingCont .marketingCont_img, .container section.weDo .advertisingCont .advertisingCont_img, .container section.weDo .advertisingCont .weDoCont_img, .container section.weDo .weDoCont .marketingCont_img, .container section.weDo .weDoCont .advertisingCont_img, .container section.weDo .weDoCont .weDoCont_img {
+          text-align: center;
+          padding: 5%; }
+          .container section.marketing .marketingCont .marketingCont_img img, .container section.marketing .marketingCont .advertisingCont_img img, .container section.marketing .marketingCont .weDoCont_img img, .container section.marketing .advertisingCont .marketingCont_img img, .container section.marketing .advertisingCont .advertisingCont_img img, .container section.marketing .advertisingCont .weDoCont_img img, .container section.marketing .weDoCont .marketingCont_img img, .container section.marketing .weDoCont .advertisingCont_img img, .container section.marketing .weDoCont .weDoCont_img img, .container section.advertising .marketingCont .marketingCont_img img, .container section.advertising .marketingCont .advertisingCont_img img, .container section.advertising .marketingCont .weDoCont_img img, .container section.advertising .advertisingCont .marketingCont_img img, .container section.advertising .advertisingCont .advertisingCont_img img, .container section.advertising .advertisingCont .weDoCont_img img, .container section.advertising .weDoCont .marketingCont_img img, .container section.advertising .weDoCont .advertisingCont_img img, .container section.advertising .weDoCont .weDoCont_img img, .container section.weDo .marketingCont .marketingCont_img img, .container section.weDo .marketingCont .advertisingCont_img img, .container section.weDo .marketingCont .weDoCont_img img, .container section.weDo .advertisingCont .marketingCont_img img, .container section.weDo .advertisingCont .advertisingCont_img img, .container section.weDo .advertisingCont .weDoCont_img img, .container section.weDo .weDoCont .marketingCont_img img, .container section.weDo .weDoCont .advertisingCont_img img, .container section.weDo .weDoCont .weDoCont_img img {
+            height: inherit;
+            margin-top: 0; }
+      .container section.marketing .advertisingCont .advertisingCont_text, .container section.advertising .advertisingCont .advertisingCont_text, .container section.weDo .advertisingCont .advertisingCont_text {
+        margin-bottom: 40px;
+        text-align: left; }
+        .container section.marketing .advertisingCont .advertisingCont_text h2.borderRigth, .container section.advertising .advertisingCont .advertisingCont_text h2.borderRigth, .container section.weDo .advertisingCont .advertisingCont_text h2.borderRigth {
+          border-left: 10px solid #fc635e;
+          border-right: 0; }
+      .container section.marketing .advertisingCont .advertisingCont_img, .container section.advertising .advertisingCont .advertisingCont_img, .container section.weDo .advertisingCont .advertisingCont_img {
+        -webkit-box-ordinal-group: 3;
+                order: 2; }
+    .container section.weDo, .container section.marketing {
+      padding-bottom: 15px; }
+    .container section.portfolio .controls {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      width: 300px; }
+      .container section.portfolio .controls button {
+        font-size: 16px; }
+      .container section.portfolio .controls .sep {
+        visibility: hidden; }
+    .container section.portfolio .container-filter {
+      width: 300px;
+      grid-template-columns: 1fr;
+      grid-column-gap: 10px;
+      grid-row-gap: 10px; }
+      .container section.portfolio .container-filter #ex1 {
+        grid-column: auto; }
+      .container section.portfolio .container-filter #ex6 {
+        grid-column: auto; }
+    .container section.ourTeam .ourTeamCont {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      -webkit-box-align: center;
+              align-items: center; }
+      .container section.ourTeam .ourTeamCont .ourTeamCont_card-mid {
+        margin: 0; }
+      .container section.ourTeam .ourTeamCont .ourTeamCont_card {
+        margin-bottom: 20px; }
+        .container section.ourTeam .ourTeamCont .ourTeamCont_card .ourTeamCont_name {
+          height: 40px; } }
+
 .borderLeft {
   border-left: 10px solid #fc635e; }
 
@@ -549,7 +899,6 @@ a.arrowDown {
           color: #565656;
           font-size: 28px;
           font-weight: 500;
-          color: #565656;
           font-family: "PF Encore Sans Pro - Regular";
           font-weight: 500;
           line-height: 26.01px;

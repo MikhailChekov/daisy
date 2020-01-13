@@ -1,126 +1,9 @@
-// @import "fonts.scss";
-// @import "media.scss";
+@import 'reset';
+@import 'variables';
+@import 'headers&buttons';
+@import 'fonts';
+@import 'media';
 
-/* Css reset */
-/*** box sizing border-box for all elements ***/
-*,
-*::before,
-*::after{box-sizing:border-box;}
-a{text-decoration:none; color:inherit; cursor:pointer;}
-button{background-color:transparent; color:inherit; border-width:0; padding:0; cursor:pointer;}
-figure{margin:0;}
-input::-moz-focus-inner {border:0; padding:0; margin:0;}
-ul, ol, dd{margin:0; padding:0; list-style:none;}
-h1, h2, h3, h4, h5, h6{margin:0; font-size:inherit; font-weight:inherit;}
-p{margin:0;}
-cite {font-style:normal;}
-fieldset{border-width:0; padding:0; margin:0;}
-
-
-
-/*Variables*/
-$mainColor: #fc635e;
-
-/* Main Headers*/
-
-.mainH1{
-    color: #ffffff;
-    font-family: "Myriad Pro Regular";
-    font-size: 51px;
-    font-weight: 400;
-    line-height: 36px;
-    text-transform: uppercase;
-    color: white;
-    span.red{
-        color: $mainColor;
-    }
-}
-
-.secondh1{
-    display: inline-block;
-    border-bottom: 1px solid $mainColor;
-    padding-bottom: 8px;
-    padding-left: 0.5px;
-    padding-right: 0.5px;
-    margin: 0 auto;
-    text-transform: uppercase;
-    font-family: 'PF Encore Sans Pro - Regular';
-    font-size: 28px;
-    font-weight: 500;
-    line-height: 26px;
-    color: #868686;
-    letter-spacing: 0.54px;
-    text-align: center;
-    span.red{
-        color: $mainColor;
-    }
-
-}
-
-.h2{
-    margin: 0 auto;
-    text-transform: uppercase;
-    font-family: 'PF Encore Sans Pro - Regular';
-    font-size: 28px;
-    font-weight: 500;
-    line-height: 26px;
-    color: #868686;
-    letter-spacing: 0.54px;
-    text-align: center;
-}
-
-/*Buttons*/
-.mainBtn{
-    color: $mainColor;
-    text-decoration: none;
-    font-family: "Myriad Pro Regular";
-    font-size: 24px;
-    border: 2px solid $mainColor;
-    border-radius: 8px;
-    width: 205px;
-    height: 56px;
-    &:hover{
-        background: $mainColor;
-        color: white;
-    }
-}
-
-.moreDetails{
-    width: 167px;
-    height: 44px;
-    background-color: $mainColor;
-    border-radius: 10px;
-    color: #f2f2f2;
-    font-family: "PF Encore Sans Pro - Thin";
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 26px;
-    letter-spacing: -0.1px;
-}
-
-a.arrowDown{
-    font-size: 22px;
-    text-decoration: none;
-    color: $mainColor;
-    border: 1px solid $mainColor;
-    display: flex;
-    justify-content: center;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    margin: 0 auto;
-    &:hover{
-        background: $mainColor;
-        color: white;
-
-    }
-}
-
-.none{
-    display: none;
-}
-
-/* Bloks dublicate Content && img */
 
 .borderLeft{
     border-left: 10px solid $mainColor;
@@ -141,7 +24,7 @@ a.arrowDown{
         p{
             margin: 0 auto;
             padding: 15px 0;
-            color: #adadad;
+            color: $forthColor_Ligth;
             font-family: "PF Encore Sans Pro - Thin";
             font-size: 15px;
             font-weight: 300;
@@ -153,7 +36,6 @@ a.arrowDown{
     .Cont_img{
     }
 }
-
 
 
 /*Site body*/
@@ -223,7 +105,7 @@ a.arrowDown{
                  margin-bottom: 19px;
             }
             p{
-                color: #ffffff;
+                color: $secondColor;
                 font-family: "Myriad Pro Regular";
                 font-size: 24px;
                 font-weight: 400;
@@ -240,24 +122,22 @@ a.arrowDown{
         text-align: center;
         background: white;
         padding: 30px 0 10px 0;
-        color: #868686;
+        color: $thirdColor_dark;
         min-height: 542px;
-        >h1{
-            // width: 338px;
-        }
+
         >p{
             overflow-y: hidden;
             margin:0 auto;
             height: 65px;
             width: 505px;
             padding-top: 15px;
-            color: #adadad;
+            color: $forthColor_Ligth;
             font-family: "PF Encore Sans Pro - Thin";
             font-size: 20px;
             font-weight: 300;
             line-height: 26px;
             margin-bottom: 80px;
-            // letter-spacing: -0.01px;
+
         }
         .icons{
             display: flex;
@@ -267,13 +147,13 @@ a.arrowDown{
             padding-bottom: 52px;
             .icon{
                 width: 202px;
-                // padding: 0 20px;
+
                 img{
                     padding-bottom: 15px;
                 }
                 h3{
                     text-transform: uppercase;
-                    color: #868686;
+                    color: $thirdColor_dark;
                     font-family: "PF Encore Sans Pro - Regular";
                     font-size: 20px;
                     font-weight: 500;
@@ -284,14 +164,14 @@ a.arrowDown{
                 hr{
                     width: 58px;
                     height: 1px;
-                    background-color: #adadad;
+                    background-color: $forthColor_Ligth;
                     margin-bottom: 20px;
                 }
                 p{
                     height: 50px;
                     text-align: justify;
                     overflow-y: hidden;
-                    color: #adadad;
+                    color: $forthColor_Ligth;
                     font-family: "PF Encore Sans Pro - Thin";
                     font-size: 15px;
                     font-weight: 300;
@@ -303,7 +183,6 @@ a.arrowDown{
     }
     /*------------ Display 3 ---------------*/
     section.expand{
-        // min-height: 400px;
         background: url('../img/expand.png') no-repeat;
         display: flex;
         justify-content: center;
@@ -316,7 +195,7 @@ a.arrowDown{
             border: 8px solid rgba(0,0,0, 0.2);
             h1{
                 margin-top: 135px;
-                color: #ffffff;
+                color: $secondColor;
                 font-family: "PF Encore Sans Pro - Regular";
                 font-size: 51px;
                 font-weight: 700;
@@ -339,16 +218,14 @@ a.arrowDown{
         margin-top: 60px;
         .ourProcessTextBlock{
             text-align: center;
-            h1{
-                // width: 190px;
-            }
+
             >p{
 
                 overflow-y: hidden;
                 height: 65px;
                 width: 504px;
                 padding-top: 15px;
-                color: #adadad;
+                color: $forthColor_Ligth;
                 font-family: "PF Encore Sans Pro - Thin";
                 font-size: 20px;
                 font-weight: 300;
@@ -376,7 +253,7 @@ a.arrowDown{
         margin-top: 20px;
         padding-bottom: 20px;
         text-align: center;
-        background: #f2f2f2;
+        background: $fifthColor_backgr;
         h1{
             margin-top: 60px;
         }
@@ -392,7 +269,7 @@ a.arrowDown{
                 p{
                     margin: 0 auto;
                     padding: 15px 0;
-                    color: #adadad;
+                    color: $forthColor_Ligth;
                     font-family: "PF Encore Sans Pro - Thin";
                     font-size: 15px;
                     font-weight: 300;
@@ -414,7 +291,7 @@ a.arrowDown{
     section.advertising{
         margin-top: 20px;
         text-align: center;
-        background: #ffffff;
+        background: $secondColor;
         h1{
             margin-top: 60px;
         }
@@ -431,7 +308,7 @@ a.arrowDown{
                 p{
                     margin: 0 auto;
                     padding: 18px 0;
-                    color: #adadad;
+                    color: $forthColor_Ligth;
                     font-family: "PF Encore Sans Pro - Thin";
                     font-size: 15px;
                     font-weight: 300;
@@ -458,7 +335,7 @@ a.arrowDown{
         padding-top: 120px;
         padding-bottom: 20px;
         text-align: center;
-        background: #f2f2f2;
+        background: $fifthColor_backgr;
         .marketingCont{
             text-align: left;
             margin-bottom: 70px;
@@ -468,7 +345,7 @@ a.arrowDown{
                 p{
                     margin: 0 auto;
                     padding: 15px 0;
-                    color: #adadad;
+                    color: $forthColor_Ligth;
                     font-family: "PF Encore Sans Pro - Thin";
                     font-size: 15px;
                     font-weight: 300;
@@ -503,8 +380,8 @@ a.arrowDown{
             display:flex;
             justify-content: space-between;
             width: 940px;
-            border-top: 1px #adadad solid;
-            border-bottom: 1px #adadad solid;
+            border-top: 1px $forthColor_Ligth solid;
+            border-bottom: 1px $forthColor_Ligth solid;
             padding: 17px 15px;
             margin-bottom: 45px;
             button{
@@ -525,7 +402,7 @@ a.arrowDown{
             }
             .sep{
                 font-size: 20px;
-                color: #adadad;
+                color: $forthColor_Ligth;
             }
         }
         .container-filter{
@@ -554,7 +431,7 @@ a.arrowDown{
                 .fil{
                     width: inherit;
                     height: inherit;
-                    color: #ffffff;
+                    color: $secondColor;
                     font-family: "PF Encore Sans Pro - Regular";
                     font-size: 28px;
                     font-weight: 700;
@@ -584,7 +461,7 @@ a.arrowDown{
             height: 51px;
             background-color: $mainColor;
             border-radius: 10px;
-            color: #f2f2f2;
+            color: $fifthColor_backgr;
             font-family: "PF Encore Sans Pro - Thin";
             font-size: 20px;
             font-weight: 300;
@@ -597,7 +474,7 @@ a.arrowDown{
     }
     /*------------ Display 9 ---------------*/
     section.ourTeam{
-        background: #f2f2f2;
+        background: $fifthColor_backgr;
         text-align: center;
         padding-bottom: 20px;
         h1{
@@ -618,10 +495,9 @@ a.arrowDown{
                     span.red{
                         color: $mainColor;
                     }
-                    color: #565656;
+                    color: $sixthColor_darker;
                     font-size: 28px;
                     font-weight: 500;
-                    color: #565656;
                     font-family: "PF Encore Sans Pro - Regular";
                     font-weight: 500;
                     line-height: 26.01px;
@@ -644,7 +520,7 @@ a.arrowDown{
                         letter-spacing: 1px;
                     }
                     .fa-circle{
-                        color: #565656;
+                        color: $sixthColor_darker;
                     }
                 }
             }
